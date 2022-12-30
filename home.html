@@ -4,9 +4,289 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <title>Document</title>
   </head>
   <body>
-    <!-- //Code here -->
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <!-- Header left -->
+        <div class="header__left">
+          <img src="./img/logo.svg" alt="Logo" />
+        </div>
+        <!-- Header mid -->
+        <div class="header__mid">
+          <div class="box__search">
+            <input type="text" class="box__search__input" placeholder="Search acounts and video" />
+            <img src="./img/search.svg" alt="Search" />
+          </div>
+        </div>
+        <!-- Header right -->
+        <div class="header__right">
+          <button class="header__right__upload header__right__item">
+            <div>
+              <img src="./img/add.svg" alt="Add" />
+              Upload
+            </div>
+          </button>
+          <img class="header__right__item" src="./img/filght.svg" alt="" />
+          <img class="header__right__item" src="./img/message.svg" alt="" srcset="" />
+          <img src="./img/images.jpg" alt="" class="account" />
+        </div>
+      </nav>
+    </header>
+    <!-- Phan body  -->
+    <div class="container">
+      <div class="sidebar">
+        <!-- Menu -->
+        <div class="sidebar__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div>
+                <img src="./img/home.svg" alt="" />
+                Home
+              </div>
+            </li>
+            <li class="menu__item">
+              <div><img src="./img//following.svg" alt="" srcset="" /> Following</div>
+            </li>
+            <li class="menu__item">
+              <div>
+                <img src="./img/live.svg" alt="" srcset="" />
+                Live
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Suggest user -->
+
+        <div class="suggest">
+          <h4 class="suggest__title">Suggested accounts</h4>
+          <div class="user">
+            <ul class="user__list">
+              <li class="user__item">
+                <div class="user__img">
+                  <img src="./img/hoang.jpg" alt="" class="account" />
+                </div>
+                <div class="user__info">
+                  <h4 class="user__ino__name">
+                    Phạm Ngọc Bình <img src="./img/check.svg" alt="" srcset="" />
+                  </h4>
+                  <span class="user__info__nickname"> Lọ</span>
+                </div>
+              </li>
+              <li class="user__item">
+                <div class="user__img">
+                  <img src="./img/dog.jpg" alt="" class="account" />
+                </div>
+                <div class="user__info">
+                  <h4 class="user__ino__name">Nguyễn Quốc Tuấn</h4>
+                  <span class="user__info__nickname"> Tuấn Cùi</span>
+                </div>
+              </li>
+              <li class="user__item">
+                <div class="user__img">
+                  <img src="./img/images.jpg" alt="" class="account" />
+                </div>
+                <div class="user__info">
+                  <h4 class="user__ino__name">Tống Huy Hoàng</h4>
+                  <span class="user__info__nickname"> Hoàng 1311</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="red">See more</div>
+        </div>
+
+        <!-- Discover -->
+        <div class="discover">
+          <div class="discover__music">
+            <li class="music__item">
+              <img src="./img/music.svg" alt="" srcset="" />
+              Vô Thượng Cự Đầu
+            </li>
+            <li class="music__item">
+              <img src="./img/music.svg" alt="" srcset="" />
+              Vô Thượng Cự Đầu
+            </li>
+            <li class="music__item">
+              <img src="./img/music.svg" alt="" srcset="" />
+              Vô Thượng Cự Đầu
+            </li>
+            <li class="music__item">
+              <img src="./img/music.svg" alt="" srcset="" />
+              Vô Thượng Cự Đầu
+            </li>
+            <li class="music__item">
+              <img src="./img/music.svg" alt="" srcset="" />
+              Vô Thượng Cự Đầu
+            </li>
+            <li class="music__item">
+              <img src="./img/music.svg" alt="" srcset="" />
+              Vô Thượng Cự Đầu
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="item">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__content__left">
+                <img src="./img/images.jpg" alt="" class="account" srcset="" />
+              </div>
+              <div class="card__body">
+                <div class="card__body__user">
+                  <span class="card__body__user__name">Ornelas Anyelse</span
+                  ><span class="card__body__user__nickname">Ornelas Anyelse</span>
+                </div>
+                <p class="video__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
+                  provident possimus tenetur corporis nemo dolorem. Voluptas tempora nihil, velit ut
+                  officiis nobis distinctio, voluptatem minima alias voluptates, quia iusto?
+                </p>
+                <b class="video__music"> <img src="./img/music.svg" alt="" srcset="" /> Ố dồi ôi</b>
+                <div class="card__body__video">
+                  <video controls src="./img/download.mp4"></video>
+                  <div class="card__video__option">
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span>2.3m</span>
+                    </div>
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-regular fa-comment"></i>
+                      </div>
+                      <span>584k</span>
+                    </div>
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-sharp fa-solid fa-share"></i>
+                      </div>
+                      <span>12k</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__following">
+              <button class="card__folling_btn">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__content__left">
+                <img src="./img/images.jpg" alt="" class="account" srcset="" />
+              </div>
+              <div class="card__body">
+                <div class="card__body__user">
+                  <span class="card__body__user__name">Ornelas Anyelse</span
+                  ><span class="card__body__user__nickname">Ornelas Anyelse</span>
+                </div>
+                <p class="video__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
+                  provident possimus tenetur corporis nemo dolorem. Voluptas tempora nihil, velit ut
+                  officiis nobis distinctio, voluptatem minima alias voluptates, quia iusto?
+                </p>
+                <b class="video__music"> <img src="./img/music.svg" alt="" srcset="" /> Ố dồi ôi</b>
+                <div class="card__body__video">
+                  <video controls src="./img/download.mp4"></video>
+                  <div class="card__video__option">
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span>2.3m</span>
+                    </div>
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-regular fa-comment"></i>
+                      </div>
+                      <span>584k</span>
+                    </div>
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-sharp fa-solid fa-share"></i>
+                      </div>
+                      <span>12k</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__following">
+              <button class="card__folling_btn">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__content__left">
+                <img src="./img/images.jpg" alt="" class="account" srcset="" />
+              </div>
+              <div class="card__body">
+                <div class="card__body__user">
+                  <span class="card__body__user__name">Ornelas Anyelse</span
+                  ><span class="card__body__user__nickname">Ornelas Anyelse</span>
+                </div>
+                <p class="video__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
+                  provident possimus tenetur corporis nemo dolorem. Voluptas tempora nihil, velit ut
+                  officiis nobis distinctio, voluptatem minima alias voluptates, quia iusto?
+                </p>
+                <b class="video__music"> <img src="./img/music.svg" alt="" srcset="" /> Ố dồi ôi</b>
+                <div class="card__body__video">
+                  <video controls src="./img/download.mp4"></video>
+                  <div class="card__video__option">
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span>2.3m</span>
+                    </div>
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-regular fa-comment"></i>
+                      </div>
+                      <span>584k</span>
+                    </div>
+                    <div class="card__video__option__item">
+                      <div class="card__video__option__item__icon">
+                        <i class="fa-sharp fa-solid fa-share"></i>
+                      </div>
+                      <span>12k</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__following">
+              <button class="card__folling_btn">Follow</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
