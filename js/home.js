@@ -110,7 +110,7 @@ video.map((data) => {
               <img src='./img/music.svg' alt='' srcset='' /> Ố dồi ôi
             </b>
             <div class='card__body__video'>
-              <video controls src='${data.video}'></video>
+              <video class='myvideo' src='${data.video}'></video>
               <div class='card__video__option'>
                 <div class='card__video__option__item'>
                   <div class='card__video__option__item__icon'>
@@ -142,4 +142,16 @@ video.map((data) => {
     </div>`;
 
   videoList.innerHTML = videoTag;
+});
+
+const videoSelectted = document.querySelectorAll('.myvideo');
+
+videoSelectted.forEach((current) => {
+  current.onclick = () => {
+    if (current.paused) {
+      current.play();
+    } else {
+      current.pause();
+    }
+  };
 });

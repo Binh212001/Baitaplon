@@ -16,7 +16,6 @@ const commentOur = [
     comment: 'Tuyệt vời !!!!!🥰🥰',
   },
 ];
-console.log('🚀 ~ file: videoprofile.js:15 ~ commentOur', commentOur);
 
 const comment = document.getElementById('comments');
 
@@ -64,10 +63,4 @@ const run = () => {
   } else {
     myvideo.pause();
   }
-};
-
-const deleteComment = (key) => {
-  console.log('dfjhsdjk');
-  commentOur = commentOur.filter((x) => x.comment != key);
-  addNewComment();
 };
