@@ -1,0 +1,77 @@
+#profile {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+.profile__info {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+  gap: 30px;
+  height: 150px;
+}
+.profile__info > img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile__info__des > button {
+  padding: 5px 20px;
+  border: 1px solid rgb(181, 179, 179);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--white);
+}
+.profile__info__des > button:hover {
+  background-color: rgb(237, 233, 233);
+  transition: all 0.3s;
+}
+
+.profile__follow {
+  display: flex;
+  list-style: none;
+  margin: 20px 0;
+}
+.profile__follow > li {
+  margin-right: 30px;
+}
+
+.content__nav > button {
+  cursor: pointer;
+  padding: 5px 60px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  height: 25px;
+}
+.content__nav > button:hover {
+  border-bottom: 2px solid gray;
+}
+.profile_content {
+  margin-top: 10px;
+}
+.item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 20px;
+  cursor: pointer;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.myvideo {
+  width: 100%;
+  border-radius: 6px;
+}
+.des {
+  font-weight: 350;
+  color: gray;
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

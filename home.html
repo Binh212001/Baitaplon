@@ -41,7 +41,15 @@
           </button>
           <img class="header__right__item" src="./img/filght.svg" alt="" />
           <img class="header__right__item" src="./img/message.svg" alt="" srcset="" />
-          <img src="./img/images.jpg" alt="" class="account" />
+
+          <div class="dropdown">
+            <img src="./img/images.jpg" alt="" class="account" />
+            <div class="dropdown__item">
+              <li class="a">
+                <a href="./profile.html"> Profile </a>
+              </li>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -50,7 +58,7 @@
       <div class="sidebar">
         <!-- Menu -->
         <div class="sidebar__menu">
-          <ul class="menu__list">
+          <ul id="menu__list">
             <li class="menu__item">
               <div>
                 <img src="./img/home.svg" alt="" />
@@ -74,219 +82,18 @@
         <div class="suggest">
           <h4 class="suggest__title">Suggested accounts</h4>
           <div class="user">
-            <ul class="user__list">
-              <li class="user__item">
-                <div class="user__img">
-                  <img src="./img/lo.png" alt="" class="account" />
-                </div>
-                <div class="user__info">
-                  <h4 class="user__ino__name">
-                    Phạm Ngọc Bình <img src="./img/check.svg" alt="" srcset="" />
-                  </h4>
-                  <span class="user__info__nickname"> Lọ</span>
-                </div>
-              </li>
-              <li class="user__item">
-                <div class="user__img">
-                  <img src="./img/dog.jpg" alt="" class="account" />
-                </div>
-                <div class="user__info">
-                  <h4 class="user__ino__name">Nguyễn Quốc Tuấn</h4>
-                  <span class="user__info__nickname"> Tuấn Cùi 🐳</span>
-                </div>
-              </li>
-              <li class="user__item">
-                <div class="user__img">
-                  <img src="./img/images.jpg" alt="" class="account" />
-                </div>
-                <div class="user__info">
-                  <h4 class="user__ino__name">Tống Huy Hoàng</h4>
-                  <span class="user__info__nickname"> Hoàng 1311 🦔</span>
-                </div>
-              </li>
-            </ul>
+            <ul id="user__list"></ul>
           </div>
           <div class="red">See more</div>
         </div>
 
         <!-- Discover -->
         <div class="discover">
-          <div class="discover__music">
-            <li class="music__item">
-              <img src="./img/music.svg" alt="" srcset="" />
-              Vô Thượng
-            </li>
-            <li class="music__item">
-              <img src="./img/music.svg" alt="" srcset="" />
-              Cự Đầu
-            </li>
-            <li class="music__item">
-              <img src="./img/music.svg" alt="" srcset="" />
-              Vô Thượng Cự Đầu
-            </li>
-            <li class="music__item">
-              <img src="./img/music.svg" alt="" srcset="" />
-              Vô Thượng
-            </li>
-            <li class="music__item">
-              <img src="./img/music.svg" alt="" srcset="" />
-              Vô Thượng
-            </li>
-            <li class="music__item">
-              <img src="./img/music.svg" alt="" srcset="" />
-              Vô Thượng Cự Đầu
-            </li>
-          </div>
+          <div id="discover__music"></div>
         </div>
       </div>
-      <div class="content">
-        <div class="item">
-          <div class="card">
-            <div class="card__content">
-              <div class="card__content__left">
-                <img src="./img/images.jpg" alt="" class="account" srcset="" />
-              </div>
-              <div class="card__body">
-                <div class="card__body__user">
-                  <span class="card__body__user__name">Ornelas Anyelse</span
-                  ><span class="card__body__user__nickname">Ornelas Anyelse</span>
-                </div>
-                <p class="video__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
-                  provident possimus tenetur corporis nemo dolorem. Voluptas tempora nihil, velit ut
-                  officiis nobis distinctio, voluptatem minima alias voluptates, quia iusto?
-                </p>
-                <b class="video__music"> <img src="./img/music.svg" alt="" srcset="" /> Ố dồi ôi</b>
-                <div class="card__body__video">
-                  <video controls src="./img/download.mp4"></video>
-                  <div class="card__video__option">
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                      <span>2.3m</span>
-                    </div>
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-regular fa-comment"></i>
-                      </div>
-                      <span>584k</span>
-                    </div>
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-sharp fa-solid fa-share"></i>
-                      </div>
-                      <span>12k</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card__following">
-              <button class="card__folling_btn">Follow</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="card">
-            <div class="card__content">
-              <div class="card__content__left">
-                <img src="./img/images.jpg" alt="" class="account" srcset="" />
-              </div>
-              <div class="card__body">
-                <div class="card__body__user">
-                  <span class="card__body__user__name">Ornelas Anyelse</span
-                  ><span class="card__body__user__nickname">Ornelas Anyelse</span>
-                </div>
-                <p class="video__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
-                  provident possimus tenetur corporis nemo dolorem. Voluptas tempora nihil, velit ut
-                  officiis nobis distinctio, voluptatem minima alias voluptates, quia iusto?
-                </p>
-                <b class="video__music"> <img src="./img/music.svg" alt="" srcset="" /> Ố dồi ôi</b>
-                <div class="card__body__video">
-                  <video controls src="./img/download.mp4"></video>
-                  <div class="card__video__option">
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                      <span>2.3m</span>
-                    </div>
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-regular fa-comment"></i>
-                      </div>
-                      <span>584k</span>
-                    </div>
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-sharp fa-solid fa-share"></i>
-                      </div>
-                      <span>12k</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card__following">
-              <button class="card__folling_btn">Follow</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="card">
-            <div class="card__content">
-              <div class="card__content__left">
-                <img src="./img/images.jpg" alt="" class="account" srcset="" />
-              </div>
-              <div class="card__body">
-                <div class="card__body__user">
-                  <span class="card__body__user__name">Ornelas Anyelse</span
-                  ><span class="card__body__user__nickname">Ornelas Anyelse</span>
-                </div>
-                <p class="video__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
-                  provident possimus tenetur corporis nemo dolorem. Voluptas tempora nihil, velit ut
-                  officiis nobis distinctio, voluptatem minima alias voluptates, quia iusto?
-                </p>
-                <b class="video__music"> <img src="./img/music.svg" alt="" srcset="" /> Ố dồi ôi</b>
-                <div class="card__body__video">
-                  <video controls src="./img/download.mp4"></video>
-                  <div class="card__video__option">
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                      <span>2.3m</span>
-                    </div>
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-regular fa-comment"></i>
-                      </div>
-                      <span>584k</span>
-                    </div>
-                    <div class="card__video__option__item">
-                      <div class="card__video__option__item__icon">
-                        <i class="fa-sharp fa-solid fa-share"></i>
-                      </div>
-                      <span>12k</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card__following">
-              <button class="card__folling_btn">Follow</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="content"></div>
     </div>
+    <script src="./js/home.js"></script>
   </body>
 </html>

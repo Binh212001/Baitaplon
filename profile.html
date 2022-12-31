@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <!-- Header left -->
+        <div class="header__left">
+          <img src="./img/logo.svg" alt="Logo" />
+        </div>
+        <!-- Header mid -->
+        <div class="header__mid">
+          <div class="box__search">
+            <input type="text" class="box__search__input" placeholder="Search acounts and video" />
+            <img src="./img/search.svg" alt="Search" />
+          </div>
+        </div>
+        <!-- Header right -->
+        <div class="header__right">
+          <button class="header__right__upload header__right__item">
+            <div>
+              <img src="./img/add.svg" alt="Add" />
+              Upload
+            </div>
+          </button>
+          <img class="header__right__item" src="./img/filght.svg" alt="" />
+          <img class="header__right__item" src="./img/message.svg" alt="" srcset="" />
+
+          <div class="dropdown">
+            <img src="./img/images.jpg" alt="" class="account" />
+            <div class="dropdown__item">
+              <li class="a">Profile</li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Phan body  -->
+    <div style="display: grid; grid-template-columns: 1fr 3fr">
+      <div class="sidebar">
+        <!-- Menu -->
+        <div class="sidebar__menu">
+          <ul id="menu__list">
+            <li class="menu__item">
+              <div>
+                <img src="./img/home.svg" alt="" />
+                Home
+              </div>
+            </li>
+            <li class="menu__item">
+              <div><img src="./img//following.svg" alt="" srcset="" /> Following</div>
+            </li>
+            <li class="menu__item">
+              <div>
+                <img src="./img/live.svg" alt="" srcset="" />
+                Live
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Suggest user -->
+
+        <div class="suggest">
+          <h4 class="suggest__title">Suggested accounts</h4>
+          <div class="user">
+            <ul id="user__list"></ul>
+          </div>
+          <div class="red">See more</div>
+        </div>
+
+        <!-- Discover -->
+        <div class="discover">
+          <div id="discover__music"></div>
+        </div>
+      </div>
+      <div id="profile">
+        <div class="profile__info">
+          <img src="./img/dog.jpg" alt="" srcset="" />
+          <div class="profile__info__des">
+            <h4>Nguyễn Quốc Tuấn</h4>
+            <div><b>Tuấn Cùi</b></div>
+            <button><img src="./img/edit.svg" alt="" /> Edit Profile</button>
+          </div>
+        </div>
+        <div class="profile__follow">
+          <li><strong>13</strong> Following</li>
+          <li><strong>27</strong> Followers</li>
+          <li><strong>0</strong> Likes</li>
+        </div>
+        <div class="profile_content">
+          <div class="content__nav">
+            <button>Video</button>
+            <button>Linked</button>
+          </div>
+          <div class="item">
+            <div class="overflow: hidden">
+              <img class="myvideo" src="./img/hoang.jpg" alt="" />
+
+              <p class="des">Thương cho tấm thân cơ hàn</p>
+            </div>
+            <div>
+              <img class="myvideo" src="./img/hoang.jpg" alt="" />
+              <p class="des">Thương cho tấm thân cơ hàn</p>
+            </div>
+            <div>
+              <img class="myvideo" src="./img/hoang.jpg" alt="" />
+
+              <p class="des">Thương cho tấm thân cơ hàn</p>
+            </div>
+            <div>
+              <img class="myvideo" src="./img/hoang.jpg" alt="" />
+
+              <p class="des">Thương cho tấm thân cơ hàn</p>
+            </div>
+            <div>
+              <img class="myvideo" src="./img/hoang.jpg" alt="" />
+
+              <p class="des">Thương cho tấm thân cơ hàn</p>
+            </div>
+            <div>
+              <img class="myvideo" src="./img/hoang.jpg" alt="" />
+
+              <p class="des">Thương cho tấm thân cơ hàn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

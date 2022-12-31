@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Details</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -11,15 +12,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Profile</title>
+    <link rel="stylesheet" href="./css/videodetails.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="video">
-        <button class="report"><i class="fa-regular fa-flag"></i> Report</button>
+    <div class="box">
+      <div class="left">
+        <video onclick="run()" id="myvideo" src="./img/video1.mp4"></video>
+        <a href="./home.html">
+          <img src="./img/cancle.svg" alt="sss" srcset="" />
+        </a>
       </div>
+      <div class="rihgt">
+        <div class="user">
+          <div class="user_detail">
+            <img class="img" src="./img/dog.jpg" alt="" />
+            <div class="info">
+              <h4>zqmusics</h4>
+              <p>Hahaha!!!!</p>
+            </div>
+          </div>
+          <button class="btn btn-follow">Follow</button>
+        </div>
+        <div class="description">Xich diễm cẩm y vệ #fyp #hello2023</div>
+        <div class="list__icon">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-comment"></i>
+          <img src="./img/code.svg" alt="" />
 
-      <div class="details"></div>
+          <img src="./img/facebook.svg" alt="" />
+          <img src="./img/hotline.svg" alt="" />
+          <img src="./img/twiter.svg" alt="" />
+          <img src="./img/filght.svg" alt="" />
+        </div>
+        <div id="comments"></div>
+        <div class="newcomment">
+          <input id="input" type="text" placeholder="Bình luận ...." />
+          <button onclick="addNewComment()" class="btn btn-post">Post</button>
+        </div>
+      </div>
     </div>
+    <script src="./js/videoprofile.js"></script>
   </body>
 </html>

@@ -111,15 +111,16 @@ b {
   width: 90%;
   margin: auto;
   display: flex;
-
   overflow: hidden;
 }
+
 .sidebar {
   width: 300px;
   max-height: 100vh;
   overflow: scroll;
   padding-bottom: 60px;
   overflow: hidden;
+  padding: 20px;
 }
 
 .sidebar:hover {
@@ -131,7 +132,7 @@ b {
 .sidebar__menu {
   padding: 10px 0;
 }
-.menu__list {
+#menu__list {
   /* // bỏ dấu chấm */
   list-style: none;
 
@@ -194,7 +195,7 @@ b {
   /* //bỏ dấu chấm */
   list-style: none;
 }
-.discover__music {
+#discover__music {
   padding: 10px 0;
   display: flex;
   flex-wrap: wrap;
@@ -206,12 +207,37 @@ b {
   padding: 4px 8px;
   margin-bottom: 4px;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .music__item:hover {
   background-color: rgb(223, 217, 217);
 }
 /* Content */
-.content {
+.dropdown {
+  position: relative;
+  border-radius: 16px;
+}
+.dropdown__item > li {
+  display: none;
+  list-style: none;
+  cursor: pointer;
+  width: 150px;
+  right: 0;
+  position: absolute;
+  background-color: var(--gray);
+  border: 8px;
+  padding: 12px 6px;
+  border: 1px solid var(--gray);
+}
+.dropdown__item > li:hover {
+  background-color: #fff;
+}
+.dropdown:hover .dropdown__item > li {
+  display: block;
+}
+#content {
   height: 100vh;
   overflow-y: scroll;
   width: 100%;
@@ -219,7 +245,7 @@ b {
   padding-top: 50px;
   margin-bottom: 60px;
 }
-.content::-webkit-scrollbar-thumb {
+#content::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
